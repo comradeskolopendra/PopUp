@@ -1,24 +1,36 @@
 body {
     margin: 0;
+    position: relative;
+    min-height: 48.1vw;
 }
 
 .container--main {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    min-height: 50vw;
 }
 
 .popup_container {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 98.95vw;
+    width: 100vw;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+
 }
 
 .show {
     display: flex;
+    background: rgba(0, 0, 0, 0.17);
+    z-index: 1;
 }
 
 .popup-main {
@@ -26,15 +38,9 @@ body {
     border-radius: 15px;
     min-height: 300px;
     width: 700px;
-    max-height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
-}
-
-.black {
-    background: rgba(0, 0, 0, 0.17);
-    z-index: 1;
 }
 
 .container__list {
@@ -62,6 +68,6 @@ body {
 
 .button__in {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -20px;
+    right: -50px;
 }

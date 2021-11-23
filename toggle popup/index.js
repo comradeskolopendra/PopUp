@@ -1,15 +1,23 @@
 let button = document.querySelector('.popup');
 let popup = document.querySelector('.popup_container');
-let body = document.querySelector('body');
+let popup_main = document.querySelector('.popup-main');
 let button_in = document.querySelector('.button__in');
+
 
 button.onclick = () => {
     popup.classList.toggle('show');
-    body.classList.toggle('black');
 }
 
-button_in.onclick = () => {
+button_in.onclick = (event) => {
     popup.classList.toggle('show');
-    body.classList.toggle('black');
+    event.stopPropagation();
 }
 
+popup_main.onclick = (event) => {
+    popup.classList.add('show');
+    event.stopPropagation();
+}
+
+popup.onclick = function test(event) {
+    popup.classList.remove('show');
+}
