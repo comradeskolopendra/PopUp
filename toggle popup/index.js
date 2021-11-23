@@ -18,6 +18,6 @@ popup_main.onclick = (event) => {
     event.stopPropagation();
 }
 
-popup.onclick = function test(event) {
+popup.onclick = () => {
     popup.classList.remove('show');
 }
