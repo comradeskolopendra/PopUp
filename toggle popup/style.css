@@ -2,6 +2,7 @@ body {
     margin: 0;
     position: relative;
     min-height: 48.1vw;
+    font-family: 'Calibri', sans-serif;
 }
 
 .container--main {
@@ -58,13 +59,6 @@ body {
     min-height: 50px;
 }
 
-.link {
-    text-decoration: none;
-    list-style-type: none;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 .container--content {
     max-height: 500px;
     overflow: scroll;
@@ -73,6 +67,219 @@ body {
 
 .button__in {
     position: absolute;
-    top: -20px;
-    right: -50px;
+    top: -30px;
+    right: -60px;
+    background: none;
+    border: none;
+}
+
+.info_text {
+    margin: 5px 10px 5px 10px; 
+}
+
+.text_black {
+    color: black;
+}
+
+.text_white {
+    color: white;
+}
+
+
+.credit__card {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: rgb(205,242,251);
+    border-radius: 5px;
+    position: relative
+}
+
+.button__close {
+    width: 40px;
+}
+
+.image__visa {
+    width: 120px;
+    height: 33px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.card__number {
+    width: 325px;
+    height: 35px;
+    border-color: 1px solid grey;
+    margin-top: 65px;
+    margin-left: 20px;
+}
+
+.card__number::placeholder {
+    font-size: 14px;
+}
+
+.card__date-text {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.container__row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.card__date-input {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card__date-input::placeholder {
+    text-align: center;
+}
+
+.divider__date {
+    margin-top: 5px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider__card {
+    border-right: 1px solid rgba(103, 142, 151, 0.17);
+    margin-left: 25px;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.card__dark-line {
+    background-color: rgb(154,180,193);
+    width: auto;
+    height: 45px;
+    margin-top: 25px;
+}
+
+.container__leftside-inputs {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.greyline {
+    width: 75px;
+    height: 7px;
+    background-color: rgb(238, 237, 237);
+}
+
+.whiteline {
+    width: 75px;
+    height: 7px;
+    background-color: white;
+}
+
+.container__cvv {
+    position: relative;
+}
+
+.container__cvv-numbers {
+    border: 1px solid rgb(184,193,196);
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.text__cvv {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cvv {
+    width: 50px;
+    height: 35px;
+    margin-left: 25px;
+    margin-top: 4px;
+}
+
+.hint {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.hint__inside {
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.hint__text {
+    width: 100px;
+    height: auto;
+    visibility: hidden;
+    background-color: rgba(184, 184, 184, 0.7);
+    position: absolute;
+    top: -55px;
+    left: -55px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.container__button__pay {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    padding-bottom: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    font-size: 18px;
+    height: 50px;
+    background-color: rgb(201, 1, 1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 26px -10px red;
+    -moz-box-shadow: 0px 5px 26px -10px red;
+    box-shadow: 0px 5px 26px -10px red;
+    border: none;
+}
+
+.link:hover {
+    background-color: rgba(201, 1, 1, 0.7);
+}
+
+.hint:hover {
+    background-color: rgba(0, 0, 0, 0.17)
+}
+
+.hint:hover .hint__text {
+    visibility: visible;
 }

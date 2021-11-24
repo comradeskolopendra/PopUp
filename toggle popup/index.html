@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle</title>
+    <title>Toggle First</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 <body>
@@ -12,33 +12,57 @@
         <button class="popup">
             Popup
         </button>
+        <input type="text" id="money" placeholder="money">
+        <input type="text" id="serial_number" placeholder="serial number">
+        <p id='warning' class='text_white'>Вы не ввели данные</p>
     </div>
-
         <div class="popup_container">
             <div class="popup-main">
-                <button class='button__in'>Close popup</button>
-                <ul class='container__list'>
-                    <li class='link'><a href='#'>1</a></li>
-                    <li class='link'><a href='#'>2</a></li>
-                    <li class='link'><a href='#'>3</a></li>
-                    <li class='link'><a href='#'>4</a></li>
-                </ul>
-                <div class="container--content">
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
-                    <div class="item">6</div>
-                    <div class="item">7</div>
-                    <div class="item">8</div>
-                    <div class="item">9</div>
-                    <div class="item">10</div>
-                    <div class="item">11</div>
-                    <div class="item">12</div>
-                    <div class="item">13</div>
-                    <div class="item">14</div>
-                </div>
+                <button class='button__in'><img src="close.png" alt="" class='button__close'></button>
+                <form class="container--content">
+                    <!-- <div class="info__headers">
+                        <p class='info_text' id='money_text'></p>
+                        <p class='info_text' id='serial_text'></p>
+                    </div> -->
+                    <div class="credit__card">
+                        <div class="rightside">
+                            <img src="visa_mastercard.png" alt='visa/mastercard' class="image__visa">
+                            <input type="text" class='card__number' placeholder='Номер карты'>
+                            <p class='card__date-text'>Срок действия</p>
+                            <div class="container__row">
+                                <input type="text" class='card__date-input' placeholder="ММ" id='mounth'>
+                                <p class='divider__date'>/</p>
+                                <input type="text" class='card__date-input' placeholder="ГГ" id='year'>
+                            </div>
+                        </div>
+                        <div class="divider__card"></div>
+                        <div class="leftside">
+                            <div class="card__dark-line"></div>
+                            <div class="container__leftside-inputs">
+                                <div class="container__cvv">
+                                    <div class="greyline"></div>
+                                    <div class="whiteline"></div>
+                                    <div class="greyline"></div>
+                                    <div class="whiteline"></div>
+                                    <div class="greyline"></div>
+                                    <div class="whiteline"></div>
+                                    <div class="greyline"></div>
+                                    <div class="container__cvv-numbers">
+                                        <p class='text__cvv'>000</p>
+                                    </div>
+                                </div>
+                                <input type="text" class='cvv' id='cvv'>
+                                <div class="hint">
+                                    <p class='hint__inside'>?</p>
+                                    <div class="hint__text">Нужно ввести код в поле</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__button__pay">
+                        <button href='#' class='link'>Оплатить покупку</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
