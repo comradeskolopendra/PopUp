@@ -55,7 +55,7 @@ popup.onclick = () => {
 }
 
 
-final.onclick = () => {
+final.onclick = (event) => {
     console.log(money.value);
     money.value = '';
 
@@ -73,4 +73,7 @@ final.onclick = () => {
 
     console.log(cvv.value);
     cvv.value = '';
+
+    popup.classList.add('show');
+    event.preventDefault();
 }
